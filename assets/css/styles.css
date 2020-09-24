@@ -205,27 +205,45 @@ img{
 .home__title-color{
   color: var(--third-color);
 }
+.home__social{
+  display: flex;
+  flex-direction: column;
+}
+.home__social-icon{
+  width: max-content;
+  margin-bottom: var(--mb-2);
+  font-size: 1.5rem;
+  color: var(--second-color);
+}
+.home__social-icon:hover{
+  color: var(--first-color);
+}
 
 .home__img{
   position: absolute;
   right: 0;
   bottom: 0;
   width: 295px;
+
 }
 
 @media screen and (max-width: 768px){
 .home__img{
    margin-right: 80px;
+   margin-top: 50px;
+   margin: auto;
 
   }
 }
 
 .home__img img{
   border-radius: 1rem;
+ 
 }
 /*BUTTONS*/
 .button{
   margin-top: 10px;
+  margin-bottom: 20px;
   display: inline-block;
   background-color: var(--third-color);
   color: #fff;
@@ -452,6 +470,8 @@ img{
     margin-right: auto;
   }
   .home__img{
+    margin-left: 50px;
+    padding-top: 100px;
     right: 10%;
   }
   .contact__form{
